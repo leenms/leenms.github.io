@@ -16,8 +16,8 @@ article:not(:first-child):before {
   margin-left: -75px;
 }
 article blockquote {
-  margin: 3rem 2rem;
-  padding-left: 15px;
+  margin: 2rem 2rem;
+  padding-left: 10px;
   line-height: 2rem;
   border-left: 4px solid #f03838;
 }
@@ -63,7 +63,7 @@ article .article-top-meta a:hover {
   color: #f03838;
 }
 article .article-top-meta a time {
-  font-style: italic;
+  font-style: normal;
 }
 article .article-excerpt,
 article .article-content,
@@ -71,6 +71,12 @@ article .featured-media {
   margin: 4rem 0;
   font-size: 1.6rem;
   color: #424242;
+}
+article .article-excerpt .excerpt-btn,
+article .article-content .excerpt-btn,
+article .featured-media .excerpt-btn {
+  margin: 4rem 0;
+  font-size: 1.4rem;
 }
 article .article-excerpt img,
 article .article-content img,
@@ -121,7 +127,7 @@ article .article-footer .post-tags a:before {
 }
 article .article-footer .post-tags a:not(:last-of-type):after {
   content: ",";
-  padding-right: 5px;
+  padding-right: 8px;
 }
 article code {
   padding: 2px 4px;
@@ -183,4 +189,26 @@ article table .table-striped tbody tr:nth-of-type(odd) {
 article table pre {
   overflow-x: auto;
   overflow-y: hidden;
+}
+@media (prefers-color-scheme: dark) {
+  article {
+    color: #f6f2f5;
+  }
+  article .article-title {
+    color: #f6f2f5;
+  }
+  article .article-title a {
+    color: #f6f2f5;
+  }
+  article .article-title a:hover {
+    color: #f6f2f5;
+  }
+  article .article-excerpt,
+  article .article-content,
+  article .featured-media {
+    color: #fff;
+  }
+  article code {
+    color: #f45542;
+  }
 }
